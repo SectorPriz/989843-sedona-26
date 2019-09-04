@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Алексей Зайцев](https://up.htmlacademy.ru/htmlcss/26/user/989843).
-* Наставник: `Неизвестно`.
+* Наставник: [Roman Kushnir](https://up.htmlacademy.ru/htmlcss/26/user/485545)
 
 ---
 
