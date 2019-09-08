@@ -11,66 +11,78 @@
           <img src="https://via.placeholder.com/150x100"
           width="" height="" alt="Логотип Седоны">
         </a>
-          <ul class="site-nav">
-            <li class=""> <a href="#">Информация</a> </li>
-            <li class=""> <a href="#">Фото и видео</a> </li>
-            <li class=""> <a href="#">Карта штата</a> </li>
-            <li class="">Гостинницы</li>
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="#">Информация</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Фото и видео</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Карта штата</a></li>
+            <li class="nav-item">Гостинницы</li>
           </ul>
       </nav>
     </header>
-    <main class="container-hotels">
+    <div class="container">
+    <main>
       <h1 class="">Выбор отеля</h1>
       <!-- Фильтр отелей -->
       <section class="container-catalog">
-        <ul class="catalog">
-          <li class="hotel-card">
+        <ul class="hotel-list">
+          <li class="hotel-item">
+            <article class="hotels">
+              <a class="hotel-name-link" href="#"><h3 class="hotel-name">AMARATA RESORT & SPA</h3></a>
             <p class="">
-              <h3 class="name-hotel">AMARATA RESORT & SPA</h3>
-              <a href="#"><img src="https://via.placeholder.com/150x100"
-                 width="" height="" alt="AMARATA RESORT & SPA"> </a>
+                <a href="#"><img src="https://via.placeholder.com/150x100" width="" height="" alt="AMARATA RESORT & SPA"></a>
             </p>
-            <p class="price">
-               <span class="view">ГОСТИННИЦА</span> ОТ 4000 Р.
+            <p class="hotel-category">
+               <span class="hotel-prise">ГОСТИННИЦА ОТ 4000 Р.</span>
             </p>
+            <p class="hotel-battons">
             <a href="#">Подробнее</a>
-            <button type="button">Забронировать</button>
-            <p>
-              <img src="" alt="Рейтинг">
+            <a href="#">Забронировать</a>
+            </p>
+            <p class="rating">
+              <img class="rating-img-5star" src="" alt="Рейтинг">
               <span class="rating-txt">РЕЙТИНГ: 8,5</span>
             </p>
+          </article>
           </li>
-          <li class="hotel-card">
+          <li class="hotel-item">
+            <article class="hotels">
+              <a class="hotel-name-link" href="#"><h3 class="hotel-name">DESERT QUAIL INN</h3></a>
             <p class="">
-              <h3 class="name-hotel">DESERT QUAIL INN</h3>
-              <a href="#"><img src="https://via.placeholder.com/150x100"
-                 width="" height="" alt="DESERT QUAIL INN"> </a>
+                <a href="#"><img src="https://via.placeholder.com/150x100"
+                 width="" height="" alt="DESERT QUAIL INN"></a>
             </p>
-            <p class="price">
-               <span class="view">МОТЕЛЬ</span> ОТ 3000 Р.
+            <p class="hotel-category">
+               <span class="hotel-prise">МОТЕЛЬ ОТ 3000 Р.</span>
             </p>
+            <p class="hotel-battons">
             <a href="#">Подробнее</a>
-            <button type="button">Забронировать</button>
-            <p>
-              <img src="" alt="Рейтинг">
+            <a href="#">Забронировать</a>
+            </p>
+            <p class="rating">
+              <img class="rating-img-3star" src="" alt="Рейтинг">
               <span class="rating-txt">РЕЙТИНГ: 8,9</span>
             </p>
+          </article>
           </li>
-          <li class="hotel-card">
+          <li class="hotel-item">
+            <article class="hotels">
+              <a class="hotel-name-link" href="#"><h3 class="hotel-name">VILLAS AT POCO DIABLO</h3></a>
             <p class="">
-              <h3 class="name-hotel">VILLAS AT POCO DIABLO</h3>
               <a href="#"><img src="https://via.placeholder.com/150x100"
-                 width="" height="" alt="VILLAS AT POCO DIABLO"> </a>
+                 width="" height="" alt="VILLAS AT POCO DIABLO"></a>
             </p>
-            <p class="price">
-               <span class="view">АПАРТАМЕНТЫ</span> ОТ 2000 Р.
+            <p class="hotel-category">
+               <span class="hotel-prise">АПАРТАМЕНТЫ ОТ 2000 Р.</span>
             </p>
+            <p class="hotel-battons">
             <a href="#">Подробнее</a>
-            <button type="button">Забронировать</button>
-            <p>
-              <img src="" alt="Рейтинг">
+            <a href="#">Забронировать</a>
+            </p>
+            <p class="rating">
+              <img class="rating-img-2star" src="" alt="Рейтинг">
               <span class="rating-txt">РЕЙТИНГ: 9,2</span>
             </p>
+          </article>
           </li>
         </ul>
       </section>
@@ -86,11 +98,12 @@
       </div>
       <div class="">
         <p class="site-by">WEBSITE BY
-         <a href="https://htmlacademy.ru/">
+         <a href="https://htmlacademy.ru/intensive/htmlcss">
            <img src="https://via.placeholder.com/150x100" width="" height="" alt="Логотип HTML Academy">
          </a>
         </p>
       </div>
+    </div>
     </footer>
     </body>
  </html>
