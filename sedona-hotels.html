@@ -9,13 +9,13 @@
 </head>
 
 <body>
-  <div class="container-hotels">
+  <div class="container">
   <header class="main-header">
     <nav class="main-nav">
       <a class="main-nav-logo" href="index.html">
         <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип Седоны">
       </a>
-      <ul class="nav-list">
+      <ul class="nav-list list">
         <li class="nav-item"><a class="nav-link" href="#">Информация</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Фото и видео</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Карта штата</a></li>
@@ -23,12 +23,14 @@
       </ul>
     </nav>
   </header>
-
     <main>
+      <section class="hero-hotels">
+        <p class="visually-hidden">Баннер</p>
+      </section>
       <h1 class="visually-hidden">Выбор отеля</h1>
       <fieldset class="fieldset-box">
         <legend class="fieldset-title">Инфраструктура:</legend>
-        <ul class="fieldset-list">
+        <ul class="fieldset-list list">
           <li class="fieldset-item">
             <input class="fieldset-item-input" id="appointment-pool" type="checkbox" checked name="pool" value="">
             <label class="fieldset-item-title" for="appointment-pool">Бассейн</label>
@@ -45,7 +47,7 @@
       </fieldset>
       <fieldset class="fieldset-box">
         <legend class="fieldset-title">Тип жилья:</legend>
-        <ul class="fieldset-list">
+        <ul class="fieldset-list list">
           <li class="fieldset-item">
             <input class="fieldset-item-input" id="appointment-guesthouse" type="checkbox" checked name="guesthouse" value="">
             <label class="fieldset-item-title" for="appointment-guesthouse">Гостиница</label>
@@ -64,7 +66,7 @@
       <section class="sorting-box">
         <h2 class="sorting-title">Найдено:<span class="sorting-title-numeral">3</span></h2>
         <p class="sorting-subtitle">Сортировка:</p>
-        <ul class="sorting-list">
+        <ul class="sorting-list list">
           <li class="sorting-item"><a href="#">По цене</a></li>
           <li class="sorting-item"><a href="#">По типу</a></li>
           <li class="sorting-item"><a href="#">По рейтингу</a></li>
@@ -72,19 +74,19 @@
       </section>
       <section class="container-catalog">
         <h2 class="visually-hidden">Каталог отелей</h2>
-        <ul class="hotel-list">
+        <ul class="hotel-list list">
           <li class="hotel-item">
             <article class="hotel">
               <a class="hotel-link" href="#"><h3 class="hotel-name">AMARATA RESORT & SPA</h3></a>
               <p class="hotel-img-box">
-                <a class="hotel-img-link"><img src="img/amarata-resort.jpg" width="135" height="90" alt="AMARATA RESORT & SPA"></a>
+                <a class="hotel-img-link" href="#"><img src="img/amarata-resort.jpg" width="135" height="90" alt="AMARATA RESORT & SPA"></a>
               </p>
               <p class="hotel-category">
                 <span class="hotel-prise">ГОСТИННИЦА ОТ 4000 Р.</span>
               </p>
               <p class="hotel-battons">
-                <a href="#">Подробнее</a>
-                <a href="#">Забронировать</a>
+                <a class="hotel-battons-more" href="#">Подробнее</a>
+                <a class="hotel-battons-reserv" href="#">Забронировать</a>
               </p>
               <p class="rating">
                 <!--5 ЗВЁЗД ЭТО НЕ РЕЙТИНГ!!!-->
@@ -97,14 +99,14 @@
             <article class="hotel">
               <a class="hotel-link" href="#"><h3 class="hotel-name">DESERT QUAIL INN</h3></a>
               <p class="hotel-img-box">
-                <a class="hotel-img-link"><img src="img/desert-inn.jpg" width="135" height="90" alt="DESERT QUAIL INN"></a>
+                <a class="hotel-img-link" href="#"><img src="img/desert-inn.jpg" width="135" height="90" alt="DESERT QUAIL INN"></a>
               </p>
               <p class="hotel-category">
                 <span class="hotel-prise">МОТЕЛЬ ОТ 3000 Р.</span>
               </p>
               <p class="hotel-battons">
-                <a href="#">Подробнее</a>
-                <a href="#">Забронировать</a>
+                <a class="hotel-battons-more" href="#">Подробнее</a>
+                <a class="hotel-battons-reserv" href="#">Забронировать</a>
               </p>
               <p class="rating">
                 <span class="rating-txt">РЕЙТИНГ: 8,9</span>
@@ -115,14 +117,14 @@
             <article class="hotel">
               <a class="hotel-link" href="#"><h3 class="hotel-name">VILLAS AT POCO DIABLO</h3></a>
               <p class="hotel-img-box">
-                <a class="hotel-img-link"><img src="img/diablo.jpg" width="135" height="90" alt="VILLAS AT POCO DIABLO"></a>
+                <a class="hotel-img-link"href="#"><img src="img/diablo.jpg" width="135" height="90" alt="VILLAS AT POCO DIABLO"></a>
               </p>
               <p class="hotel-category">
                 <span class="hotel-prise">АПАРТАМЕНТЫ ОТ 2000 Р.</span>
               </p>
               <p class="hotel-battons">
-                <a href="#">Подробнее</a>
-                <a href="#">Забронировать</a>
+                <a class="hotel-battons-more" href="#">Подробнее</a>
+                <a class="hotel-battons-reserv" href="#">Забронировать</a>
               </p>
               <p class="rating">
                 <span class="rating-txt">РЕЙТИНГ: 9,2</span>
@@ -134,7 +136,7 @@
     </main>
     <footer class="main-footer">
       <p class="hashtag-footer">#VISITSEDONA</p>
-      <ul class="social-list">
+      <ul class="social-list list">
         <li class="social-item"><a class="social-link" href="#">Twitter</a></li>
         <li class="social-item"><a class="social-link" href="#">FaceBook</a></li>
         <li class="social-item"><a class="social-link" href="#">YouTube</a></li>

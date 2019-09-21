@@ -13,7 +13,7 @@
     <header class="main-header">
       <nav class="main-nav">
         <a class="main-nav-logo" href="#"><img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип Седоны"></a>
-        <ul class="nav-list">
+        <ul class="nav-list list">
           <li class="nav-item"><a class="nav-link" href="#">Информация</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Фото и видео</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Карта штата</a></li>
@@ -22,10 +22,13 @@
       </nav>
     </header>
     <main>
+      <section  class="hero">
+        <h2 class="visually-hidden">Баннер</h2>
+      </section>
       <section class="advantage-box">
         <h1 class="advantage-title">Седона - небольшой городок в Аризоне, заслуживающий большего</h1>
         <p class="advantage-subtitle">Рассмотрим 5 причин по которым Седона круче, чем Гранд каньон!</p>
-        <ol class="advantage-list">
+        <ol class="advantage-list list">
           <li class="advantage-first-item">
             <div class="advantage-first-text">
               <h2 class="advantage-item-title">Настоящий городок</h2>
@@ -33,7 +36,7 @@
               <p class="advantage-item-subtitle">Седона - не атракцион для туристов, там течёт вcя жизнь</p>
             </div>
               <img class="advantage-inner-img" src="img/advantage-1.jpg" width="800" height="401" alt="Фотография Седоны">
-            <ul class="advantage-inner-list-house">
+            <ul class="advantage-inner-list-house list">
               <li class="advantage-inner-item">
                 <h3 class="advantage-inner-item-title">Жильё</h3>
                 <p class="advantage-inner-item-subtitle">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -99,6 +102,8 @@
           <p class="search-form-item-number">
             <label class="search-form-item-number-title" for="grown">Взрослые:</label>
             <span class="search-form-item-number-box">
+              <button class="search-form-item-number-minus" type="button"><img src="img/minus.svg" alt="Минус"></button>
+              <button class="search-form-item-number-pluse" type="button"><img src="img/pluse.svg" alt="Плюс"></button>
               <input class="search-form-item-number-input" id="grown" type="number" name="grown" value="" placeholder="2">
             </span>
           </p>
@@ -110,7 +115,7 @@
               <input class="search-form-item-number-input" id="children" type="number" name="children" value="" placeholder="0">
             </span>
           </p>
-          <a class="search-form-button" href="#">Найти</a>
+          <button class="search-form-button" type="submit">Найти</button>
         </form>
       </section>
       <section>
@@ -120,8 +125,8 @@
     </main>
     <footer class="main-footer">
       <p class="hashtag-footer">#VISITSEDONA</p>
-      <ul class="social-list">
-        <li class="social-item"><a class="social-link" href="#">Twitter</a></li>
+      <ul class="social-list list">
+        <li class="social-item-t"><a class="social-link-t" href="#">Twitter</a></li>
         <li class="social-item"><a class="social-link" href="#">FaceBook</a></li>
         <li class="social-item"><a class="social-link" href="#">YouTube</a></li>
       </ul>

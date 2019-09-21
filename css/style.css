@@ -13,42 +13,55 @@ body {
 
  }
 
+ footer {
+   text-align: center;
+   background-color: #ffffff;
+ }
+
+ img {
+   max-width: 100%;
+  }
+
+ a:not(.sorting-box) {
+   text-decoration: none;
+  }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
 .container {
    padding-left: 40px;
    padding-right: 40px;
-
-   background-image: url("../img/bg.jpg");
-   background-position: top center;
-   background-repeat: no-repeat;
  }
 
- .container-hotels {
-    padding-left: 40px;
-    padding-right: 40px;
-
-    background-image: url("../img/filter_background.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;
-  }
-
-main {
-/* Когда вставляю баннер сюда он почему-то не отображается на главной,
- зато висит на внутренней, я так поинаю им тоже класы задать нужно? */
-}
-
-
-img {
-  max-width: 100%;
- }
-
-a {
-  text-decoration: none;
- }
-
-.visually-hidden {
+.hero {
+  background-image: url("../img/banner.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
 
 }
 
+.hero-hotels {
+  background-image: url("../img/filter_background.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 .main-nav {
   font-size: 14px;
@@ -74,7 +87,7 @@ a {
 }
 
 .main-nav a:focus {
-  color: #81b3d2;
+  color: rgba(0,0,0, 0.3);
 }
 
 .advantage-box {
@@ -155,7 +168,7 @@ a {
 .hotels-search-title{
   font-size: 30px;
   line-height: 36px;
-  font-style: bold;
+  font-size: 700;
   color: #000000;
 }
 
@@ -229,4 +242,92 @@ a {
   border: none;
   height: 58px;
   width: 458px;
+}
+
+.hashtag-footer {
+  font-weight: 700;
+  font-size: 21px;
+
+  color: #000000;
+}
+.sorting-box {
+  text-align: left;
+
+  background-color: #ffffff;
+}
+
+.sorting-box a {
+  color: rgba(0,0,0, 0.3);
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+
+.sorting-box a:hover {
+  color: #81b3d2;
+}
+
+.sorting-box a:focus {
+  color: #000000;
+}
+
+.container-catalog {
+  background-color: #ffffff;
+}
+
+.hotel h3 {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.hotel h3:hover {
+  color: #81b3d2;
+}
+.hotel h3:focus {
+  color: rgba(0,0,0, 0.3);
+}
+
+.hotel label {
+  line-height: 21px;
+}
+
+.hotel-battons-more {
+  font-size: 700;
+  line-height: 21px;
+  color: #ffffff;
+
+  width: 110px;
+  height: 27px;
+
+  background-color: #81b3d2;
+}
+
+.hotel-battons-more:hover {
+  background-color: #669ec0;
+}
+
+.hotel-battons-more:focus {
+  color: rgba(255,255,255,255,0,3);
+  background-color: #5496bd;
+}
+
+.hotel-battons-reserv {
+  font-size: 700;
+  line-height: 21px;
+  color: #ffffff;
+
+  width: 142px;
+  height: 27px;
+
+  background-color: #766357;
+}
+
+.hotel-battons-reserv:hover {
+  background-color: #604e43;
+}
+
+.hotel-battons-reserv:hover {
+  color: rgba(255,255,255,255,0,3);
+  background-color: #503e33;
 }
