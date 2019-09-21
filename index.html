@@ -26,12 +26,14 @@
         <h1 class="advantage-title">Седона - небольшой городок в Аризоне, заслуживающий большего</h1>
         <p class="advantage-subtitle">Рассмотрим 5 причин по которым Седона круче, чем Гранд каньон!</p>
         <ol class="advantage-list">
-          <li class="advantage-item">
-            <h2 class="advantage-item-title">Настоящий городок</h2>
-            <p class="advantage-item-number">— №1 —</p>
-            <p class="advantage-item-subtitle">Седона - не атракцион для туристов, там течёт вcя жизнь</p>
-            <img class="advantage-inner-img" src="img/advantage-1.jpg" width="800" height="401" alt="Фотография Седоны">
-            <ul class="advantage-inner-list">
+          <li class="advantage-first-item">
+            <div class="advantage-first-text">
+              <h2 class="advantage-item-title">Настоящий городок</h2>
+              <p class="advantage-item-number">— №1 —</p>
+              <p class="advantage-item-subtitle">Седона - не атракцион для туристов, там течёт вcя жизнь</p>
+            </div>
+              <img class="advantage-inner-img" src="img/advantage-1.jpg" width="800" height="401" alt="Фотография Седоны">
+            <ul class="advantage-inner-list-house">
               <li class="advantage-inner-item">
                 <h3 class="advantage-inner-item-title">Жильё</h3>
                 <p class="advantage-inner-item-subtitle">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -46,10 +48,12 @@
               </li>
             </ul>
           </li>
-          <li class="advantage-item">
-            <h2 class="advantage-item-title">Там есть Мост дьявола</h2>
-            <p class="advantage-item-number">— №2 —</p>
-            <p class="advantage-item-subtitle">Да, по нему можно пройти! Если конечно вы осмелитесь</p>            
+          <li class="advantage-third-item">
+            <div class="advantage-third-text">
+              <h2 class="advantage-item-title">Там есть Мост дьявола</h2>
+              <p class="advantage-item-number">— №2 —</p>
+              <p class="advantage-item-subtitle">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
             <img src="img/advantage-2.jpg" width="800" height="400" alt="Фотография моста Дьявола">
           </li>
           <li class="advantage-item">
@@ -72,7 +76,7 @@
       <section class="hotels-search">
         <h2 class="visually-hidden">Поиск отеля</h2>
         <p class="hotels-search-title">Заинтересовались?</p>
-        <p class="hotels-search-description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостинниц в седоне</p>
+        <p class="hotels-search-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостинниц в седоне</p>
         <button class="hotels-search-button" type="button">Поиск гостинницы в Седоне</button>
       </section>
       <section class="search-form-box">
@@ -95,8 +99,6 @@
           <p class="search-form-item-number">
             <label class="search-form-item-number-title" for="grown">Взрослые:</label>
             <span class="search-form-item-number-box">
-              <button class="search-form-item-number-minus" type="button"><img src="img/minus.svg" alt="Минус"></button>
-              <button class="search-form-item-number-pluse" type="button"><img src="img/pluse.svg" alt="Плюс"></button>
               <input class="search-form-item-number-input" id="grown" type="number" name="grown" value="" placeholder="2">
             </span>
           </p>
@@ -108,7 +110,7 @@
               <input class="search-form-item-number-input" id="children" type="number" name="children" value="" placeholder="0">
             </span>
           </p>
-          <button class="search-form-button" type="submit">Найти</button>
+          <a class="search-form-button" href="#">Найти</a>
         </form>
       </section>
       <section>
