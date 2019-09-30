@@ -32,13 +32,15 @@ body {
    text-decoration: none
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
     position: absolute;
     width: 1px;
     height: 1px;
     margin: -1px;
     border: 0;
     padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
@@ -51,13 +53,18 @@ body {
   box-shadow: rgba(0, 0, 0, 0.5);
  }
 
+
 .hero {
   background-image: url("../img/banner.jpg");
-  background-position: top center;
+  background-position: top;
   background-repeat: no-repeat;
   image:  url("../img/polygon.png");
   /*для себя*/
+
+
   height: 600px;
+
+
 
 }
 
@@ -65,7 +72,13 @@ body {
   background-image: url("../img/filter_background.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+}
 
+/.main-nav-logo {
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  transform: translateX(-50%);
 }
 
 .list {
@@ -76,17 +89,22 @@ body {
 
 .nav-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
 
-  /*align-items: center;*/
+/* что то здесь не так*/
+.nav-link {
 
-  height: 56px;
 
-  margin: 0 auto;
+}
+
+.nav-list:nth-child(3) {
+  margin-left: auto;
 }
 
 .nav-item {
-  padding-top: 15px;
+  padding: 15px 0 15px;
+  width: 240px;
 }
 
 .main-nav {
@@ -96,6 +114,7 @@ body {
 
 .nav-list {
   list-style: none;
+
 }
 
 .main-nav {
@@ -131,6 +150,15 @@ body {
 
 .advantage-first-item-box {
   display: flex;
+  min-width:
+}
+
+.advantage-first-text {
+  flex-grow: 0;
+}
+
+.advantage-inner-img {
+  flex-grow: 1;
 }
 
 .advantage-third-item-box {
@@ -142,6 +170,7 @@ body {
   display: flex;
   justify-content: space-around;
 }
+
 
 .advantage-inner-list {
   display: flex;
@@ -202,6 +231,10 @@ body {
   color: #333333;
 }
 
+.advantage-inner-item::before {
+  content: url("../img/icon-1.svg");
+}
+
 .hotels-search {
   text-align: center;
 
@@ -253,14 +286,20 @@ body {
 
 .search-form-box {
   text-align: center;
-  background-color: #ffffff;
+
   padding: 50px;
   margin-left: 316px;
   margin-right: 316px;
 
 
-  display: flex;
+  display: flex;  
   justify-content: center;
+
+}
+
+.search-form {
+  background-color: #ffffff;
+  border: none;
 }
 
 .search-form-box label{
@@ -275,6 +314,15 @@ body {
   text-transform: uppercase;
   background-color: #f2f2f2;
   border: none;
+}
+
+.search-form {
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.search-form-item-input-text-box::after {
+  content: url("../img/calendar.svg")
 }
 
 .search-form-button {
