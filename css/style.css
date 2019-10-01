@@ -50,21 +50,30 @@ body {
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
-  box-shadow: rgba(0, 0, 0, 0.5);
+
+ }
+
+ .main-header {
  }
 
 
 .hero {
-  background-image: url("../img/banner.jpg");
+  position: relative;
+  background-image: url("../img/background_photo.jpg");
   background-position: top;
   background-repeat: no-repeat;
-  image:  url("../img/polygon.png");
-  /*для себя*/
 
 
-  height: 600px;
+}
 
-
+.welcome {
+  max-width: 459px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  /*правильно ли?*/
+  padding-top: 100px;
+  padding-bottom: 79px;
 
 }
 
@@ -74,7 +83,7 @@ body {
   background-repeat: no-repeat;
 }
 
-/.main-nav-logo {
+.main-nav-logo {
   position: absolute;
   left: 50%;
   z-index: 2;
@@ -88,28 +97,23 @@ body {
 }
 
 .nav-list {
+  padding: 14px 0 16px;
+
   display: flex;
-  justify-content: space-between;
-}
+  justify-content: space-around;
 
-/* что то здесь не так*/
-.nav-link {
-
-
-}
-
-.nav-list:nth-child(3) {
-  margin-left: auto;
 }
 
 .nav-item {
-  padding: 15px 0 15px;
-  width: 240px;
+
+
+
 }
 
 .main-nav {
   font-weight: 700;
   color: #000000;
+  z-index: 1;
 }
 
 .nav-list {
@@ -150,9 +154,14 @@ body {
 
 .advantage-first-item-box {
   display: flex;
-  min-width:
+  height: 256px;
 }
 
+.advantage-inner-img {
+  max-width: 100%;
+  height: auto;
+}
+/*опять эксперименты*/
 .advantage-first-text {
   flex-grow: 0;
 }
@@ -183,8 +192,10 @@ body {
 
 .advantage-title {
   font-size: 21px;
+  line-height: 26px;
   color: #000000;
   font-style: bold;
+  max-width: 600px;
 }
 
 .advantage-list h2 {
@@ -292,7 +303,7 @@ body {
   margin-right: 316px;
 
 
-  display: flex;  
+  display: flex;
   justify-content: center;
 
 }
