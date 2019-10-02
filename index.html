@@ -15,7 +15,7 @@
         <a class="main-nav-logo" href="#"><img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип Седоны"></a>
         <ul class="nav-list list">
           <li class="nav-item"><a class="nav-link1" href="#advantages">Информация</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Фото и видео</a></li>
+          <li class="nav-item" style="margin-right: auto;"><a class="nav-link" href="#">Фото и видео</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Карта штата</a></li>
           <li class="nav-item"><a class="nav-link" href="sedona-hotels.html">Гостиницы</a></li>
         </ul>
@@ -23,12 +23,12 @@
     </header>
     <main>
       <section class="hero">
-        <img class="welcome" src="img/intro-welcome.svg" alt="">
+        <img class="welcome" src="img/intro-welcome.svg" alt="Welcome Sedona">
         <h2 class="visually-hidden">Баннер</h2>
       </section>
       <section id="advantages" class="advantage-box">
         <h1 class="advantage-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <p class="advantage-subtitle">Рассмотрим 5 причин по которым Седона круче, чем Гранд каньон!</p>
+        <p class="advantage-subtitle">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
         <ol class="advantage-list list">
           <li class="advantage-item">
             <div class="advantage-first-item-box">
@@ -40,28 +40,32 @@
               <img class="advantage-inner-img" src="img/advantage-1.jpg" width="800" height="401" alt="Фотография Седоны">
             </div>
             <ul class="advantage-inner-list list">
-              <li class="advantage-inner-item">
+              <li class="advantage-inner-item house">
                 <h3 class="advantage-inner-item-title">Жильё</h3>
                 <p class="advantage-inner-item-subtitle">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
-              <li class="advantage-inner-item">
+              <li class="advantage-inner-item burger">
                 <h3 class="advantage-inner-item-title">Еда</h3>
                 <p class="advantage-inner-item-subtitle">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li class="advantage-inner-item">
+              <li class="advantage-inner-item gift">
                 <h3 class="advantage-inner-item-title">Сувениры</h3>
                 <p class="advantage-inner-item-subtitle">Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </li>
           <li class="advantage-item">
-            <div class="advantage-third-item-box">
-              <h2 class="advantage-item-title">Там есть Мост дьявола</h2>
-              <p class="advantage-item-number">— №2 —</p>
-              <p class="advantage-item-subtitle">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <div class="advantage-second-item-box">
+              <div class="advantage-second-text">
+                <h2 class="advantage-item-title">Там есть Мост дьявола</h2>
+                <p class="advantage-item-number">— №2 —</p>
+                <p class="advantage-item-subtitle">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              </div>
               <img src="img/advantage-2.jpg" width="800" height="400" alt="Фотография моста Дьявола">
             </div>
           </li>
+        </ol>
+        <ol class="advantage-another-list list">
           <li class="advantage-item">
             <h2 class="advantage-item-title">Небольшая площадь</h2>
             <p class="advantage-item-number">— №3 —</p>
@@ -77,21 +81,23 @@
             <p class="advantage-item-number">— №5 —</p>
             <p class="advantage-item-subtitle">Большинство едет в гранд каньон и толпится там</p>
           </li>
+
         </ol>
       </section>
       <section class="hotels-search">
         <h2 class="visually-hidden">Поиск отеля</h2>
         <p class="hotels-search-title">Заинтересовались?</p>
         <p class="hotels-search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостинниц в седоне</p>
+        <button class="hotels-search-button" type="button">Поиск гостинницы в Седоне</button>
       </section>
       <section class="search-form-box">
         <h2 class="visually-hidden">Найти отель в Седоне</h2>
-        <button class="hotels-search-button" type="button">Поиск гостинницы в Седоне</button>
+
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="search-form-item-text">
             <label class="search-form-item-text-title" for="appointment-date-arrival">Дата заезда:</label>
             <span class="search-form-item-input-text-box">
-              <button class="search-form-item-text-calendar" type="button">Выбор даты<img src="img/calendar.svg" alt="Выбор даты"></button>
+              <button class="visually-hidden" type="button">Выбор даты<img src="img/calendar.svg" alt="Выбор даты"></button>
               <input class="search-form-item-text-input" id="appointment-date-arrival" type="text" name="date-arrival" value="" placeholder="24 апреля 2017">
             </span>
           </p>
@@ -121,7 +127,7 @@
           <button class="search-form-button" type="submit">Найти</button>
         </form>
       </section>
-      <section>
+      <section class="map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <img class="map-img" src="img/map.jpg" width="1718" height="748" alt="Седона на карте">
       </section>

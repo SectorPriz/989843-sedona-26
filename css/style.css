@@ -9,40 +9,38 @@ html {
 }
 
 body {
-   margin: 0;
-   padding: 0;
-
-   font-family: "PT Sans", Arial, sans-serif;
-   font-size: 14px;
-   line-height: 26px;
-   font-style: normal;
-   color: #333333;
-   text-transform: uppercase;
-
-   background-color: #F2F2F2;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-style: normal;
+  color: #333333;
+  text-transform: uppercase;
+  background-color: #F2F2F2;
 
 }
 
- img {
-   max-width: 100%;
-   height: auto;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
- a {
-   text-decoration: none
+a {
+  text-decoration: none
 }
 
 .visually-hidden:not(:focus):not(:active) {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 
@@ -50,20 +48,32 @@ body {
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
+  box-shadow: 0 0 7px rgba(0,0,0,0.2);
 
  }
 
+ .list {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+ }
+
  .main-header {
+   position: fixed;
+   top: 0;
+   left:  0;
+   right: 0;
+   z-index: 1;
+   margin: 0 auto;
+   max-width: 1200px;
  }
 
 
 .hero {
   position: relative;
   background-image: url("../img/background_photo.jpg");
-  background-position: top;
+  background-position: top left 0.1px;
   background-repeat: no-repeat;
-
-
 }
 
 .welcome {
@@ -71,9 +81,9 @@ body {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  /*правильно ли?*/
-  padding-top: 100px;
-  padding-bottom: 79px;
+  /*правильно ли делать паддингами?*/
+  padding-top: 132px;
+  padding-bottom: 71px;
 
 }
 
@@ -90,39 +100,24 @@ body {
   transform: translateX(-50%);
 }
 
-.list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-list {
-  padding: 14px 0 16px;
-
-  display: flex;
-  justify-content: space-around;
-
-}
-
-.nav-item {
-
-
-
-}
-
 .main-nav {
   font-weight: 700;
   color: #000000;
   z-index: 1;
+
+  background-color: #ffffff;
 }
 
 .nav-list {
   list-style: none;
-
+  padding: 14px 0 16px;
+  display: flex;
 }
 
-.main-nav {
-  background-color: #ffffff;
+.nav-item {
+  /*из макета, по тз. И временно чась стилей в разметке*/
+  width: 239px;
+  text-align: center;
 }
 
 .main-nav a {
@@ -141,6 +136,7 @@ body {
 .advantage-box {
   margin: 0;
   padding: 0;
+  padding-top: 60px;
   text-align: center;
   align-items: center;
   background-color: #ffffff;
@@ -148,110 +144,155 @@ body {
   flex-direction: column;
 }
 
-.advantage-item {
-  min-height: 256px;
+.advantage-title {
+  font-size: 21px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+  /*временно*/
+  width: 600px;
+  letter-spacing: 0.2px;
+}
+
+.advantage-subtitle {
+  margin: 0;
+  /*временно*/
+  padding: 28px 0 25px;
+  letter-spacing: 0.1px;
+}
+
+.advantage-list {
+  background-color: #eeeeee;
 }
 
 .advantage-first-item-box {
   display: flex;
-  height: 256px;
 }
 
 .advantage-inner-img {
   max-width: 100%;
   height: auto;
 }
-/*опять эксперименты*/
+
 .advantage-first-text {
-  flex-grow: 0;
-}
-
-.advantage-inner-img {
-  flex-grow: 1;
-}
-
-.advantage-third-item-box {
+  background-color: rgba(129,179,210, 0.98);
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
+  justify-content: center;
+  /*временно*/
+  width: 400px;
 }
 
-.advantage-item-container {
-  display: flex;
-  justify-content: space-around;
+.advantage-first-text h2 {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ffffff;
+  /*временно*/
+  padding: 0 100px;
 }
 
+.advantage-first-text p {
+  color: #ffffff;
+  padding: 0 50px;
+}
+
+.house::before {
+  content: url("../img/icon-1.svg");
+}
+
+.burger::before {
+  content: url("../img/icon-3.svg");
+}
+
+.gift::before {
+  content: url("../img/icon-2.svg");
+}
 
 .advantage-inner-list {
   display: flex;
-}
+  /*align-content: center;*/
+  width: calc(100/3);
+  background-color: #ffffff;
+  /*временно*/
+  height: 330px;
 
-.advantage-list {
-  list-style: none;
-  background-color: #eeeeee;
-  }
-
-.advantage-title {
-  font-size: 21px;
-  line-height: 26px;
-  color: #000000;
-  font-style: bold;
-  max-width: 600px;
-}
-
-.advantage-list h2 {
-  font-size: 21px;
-  line-height: 21px;
-}
-
-.advantage-list p {
-  line-height: 21px;
-}
-
-.advantage-first-item {
-  color: #ffffff;
-
-}
-
-.advantage-first-text {
-  background-color: #81b3d2;
-}
-
-
-.advantage-third-item {
-  color: #ffffff;
-}
-
-.advantage-third-text {
-  background-color: #81b3d2;
 }
 
 .advantage-inner-item {
-  min-height: 256px;
-  list-style: none;
-  background-color: #ffffff;
+  padding-top: 50px;
 }
 
 .advantage-inner-item h3 {
   font-size: 21px;
   line-height: 21px;
+  font-weight: 700;
   color: #000000;
+  text-align: center;
+
 }
 
 .advantage-inner-item p {
-  line-height: 21px;
-  color: #333333;
+  text-align: center;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
-.advantage-inner-item::before {
-  content: url("../img/icon-1.svg");
+.advantage-second-item-box {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.advantage-second-text {
+  background-color: rgba(129,179,210, 0.98);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*временно*/
+  width: 400px;
+}
+
+.advantage-second-text h2 {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ffffff;
+  /*временно*/
+  padding: 0 120px;
+}
+
+.advantage-second-text p {
+  color: #ffffff;
+  padding: 0 50px;
+}
+
+.advantage-another-list {
+  background-color: #eeeeee;
+  display: flex;
+  width: calc(100/3);
+  /*временно,*/
+  height: 256px;
+  padding-top: 40px;
+}
+
+.advantage-another-list h2 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.advantage-another-list p {
+  text-align: center;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .hotels-search {
   text-align: center;
-
   background-color: #ffffff;
-
-
+  margin: 0 auto;
   max-width: 1200px;
 }
 
@@ -260,6 +301,8 @@ body {
   line-height: 36px;
   font-weight: 700;
   color: #000000;
+  margin: 0;
+  padding-top: 50px;
 }
 
 .hotels-search-description{
@@ -270,6 +313,7 @@ body {
   font: inherit;
   font-weight: 700;
   font-size: 21px;
+  letter-spacing: 0.01px;
   color:  #ffffff;
 
   vertical-align: middle;
@@ -277,12 +321,10 @@ body {
 
   background-color: #766357;
   border: none;
-  margin-left: 316px;
-  margin-right: 316px;
-  padding: 35px 139px 33px;
+  margin: 0 auto;
+  max-width: 568px;
 
-  display: flex;
-  justify-content: center;
+  padding: 30px 132px 30px;
 
 }
 
@@ -296,21 +338,35 @@ body {
 }
 
 .search-form-box {
-  text-align: center;
-
+  background-color: #ffffff;
   padding: 50px;
-  margin-left: 316px;
-  margin-right: 316px;
-
-
+  margin: 0 auto;
+  max-width: 568px;
   display: flex;
-  justify-content: center;
-
+  justify-content: left; /*как потом сделать кнопку по центру*/
+  flex-direction: column;
+  position: absolute;
+  top: 2078px;
+  left:  0;
+  right: 0;
+  z-index: 1;
+  margin: 0 auto;
+  max-width: 568px;
+  z-index: 2;
 }
+
+/*.map {
+  position: absolute;
+  margin: 0 auto;
+  max-width: 1200px;
+  top: -350px;
+  z-index: 0;
+}*/
 
 .search-form {
   background-color: #ffffff;
   border: none;
+
 }
 
 .search-form-box label{
@@ -323,15 +379,9 @@ body {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-  background-color: #f2f2f2;
+
   border: none;
 }
-
-.search-form {
-  background-color: #f2f2f2;
-  border: none;
-}
-
 .search-form-item-input-text-box::after {
   content: url("../img/calendar.svg")
 }
@@ -347,7 +397,6 @@ body {
   border: none;
   max-width: 458px;
   padding: 17px 195px;
-
 }
 
 .main-footer {
