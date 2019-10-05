@@ -14,20 +14,18 @@
       <nav class="main-nav">
         <a class="main-nav-logo" href="index.html"><img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип Седоны"></a>
         <ul class="nav-list list">
-          <li class="nav-item"><a class="nav-link" href="#">Информация</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Фото и видео</a></li>
-          <!--<li class="nav-item-img">
-            <a class="main-nav-logo" href="index.html"><img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип Седоны"></a>
-          </li>-->
+          <li class="nav-item"><a class="nav-link1" href="index.html#advantages">Информация</a></li>
+          <li class="nav-item" style="margin-right: auto;"><a class="nav-link" href="#">Фото и видео</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Карта штата</a></li>
-          <li class="nav-item"><a class="nav-link">Гостиницы</a></li>
+          <li class="nav-item"><a class="nav-link" href="sedona-hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
+    </header>
     <main>
-      <section class="hero-hotels">
+      <!--  <section class="hero-hotels">
         <h2 class="visually-hidden">Баннер</h2>
-      </section>
+      </section> -->
       <div class="filter box">
         <h1 class="visually-hidden">Выбор отеля</h1>
         <fieldset class="fieldset-box">
@@ -64,7 +62,12 @@
             </li>
           </ul>
         </fieldset>
-        <!--Фильтр с ползунками-->
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="filter-form-lable" for="appointment-date-arrival">Стоимость в сутки (Р):</label>
+          <input type="???" name="" value="">
+          <input type="submit" name="" value="Показать">
+          <!--  <button type="submit" name="показать">Показать</button> -->
+        </form>
       </div>
       <section class="sorting-box box">
         <h2 class="sorting-title">Найдено:<span class="sorting-title-numeral">3</span></h2>
@@ -158,9 +161,15 @@
     <footer class="main-footer">
       <p class="hashtag-footer">#VISITSEDONA</p>
       <ul class="social-list list">
-        <li class="social-item"><a class="social-link" href="#">Twitter</a></li>
-        <li class="social-item"><a class="social-link" href="#">FaceBook</a></li>
-        <li class="social-item"><a class="social-link" href="#">YouTube</a></li>
+        <li class="social-item">
+          <a class="social-link" href="#"><img src="img/twitter.svg" alt="Twitter"></a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="#"><img src="img/fb-icon.svg" alt="FaceBook"></a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="#"><img src="img/youtube.svg" alt="YouTube"></a>
+        </li>
       </ul>
       <div class="">
         <p class="site-by">WEBSITE BY
