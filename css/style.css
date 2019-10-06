@@ -57,13 +57,14 @@ a {
  }
 
  .main-header {
-   position: absolute;
+   position: fixed;
    top: 0;
    left:  0;
    right: 0;
    z-index: 1;
    margin: 0 auto;
    max-width: 1200px;
+   z-index: 5
  }
 
 
@@ -84,25 +85,17 @@ a {
   padding-bottom: 71px;
 }
 
-.hero-hotels {
-  background-image: url("../img/filter_background.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-  /*Временно*/
-  padding-top: 500px;
-}
-
 .main-nav-logo {
   position: absolute;
   left: 50%;
-  z-index: 2;
+  z-index: 6;
   transform: translateX(-50%);
 }
 
 .main-nav {
   font-weight: 700;
   color: #000000;
-  z-index: 1;
+  z-index: 5;
   background-color: #ffffff;
 }
 
@@ -111,9 +104,11 @@ a {
   padding: 14px 0 16px;
   display: flex;
 }
+.nav-list li:nth-child(2) {
+  margin-right: auto;
+}
 
 .nav-item {
-  /*из макета, по тз. И временно чась стилей в разметке*/
   width: 239px;
   text-align: center;
 }
@@ -149,7 +144,7 @@ a {
   margin: 0;
   /*временно*/
   width: 600px;
-  letter-spacing: -0.2px;
+
 }
 
 .advantage-subtitle {
@@ -166,6 +161,7 @@ a {
 
 .advantage-first-item-box {
   display: flex;
+
 }
 
 .advantage-inner-img {
@@ -177,48 +173,86 @@ a {
   background-color: rgba(129,179,210, 0.98);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  /*временно*/
-  width: 400px;
+  padding-top: 47px;
+
+  /*временно, нужно 400пх*/
+  max-width: 400px;
 }
 
 .advantage-first-text h2 {
   font-size: 21px;
   line-height: 21px;
   color: #ffffff;
+  margin: 0;
   /*временно*/
   padding: 0 100px;
+  padding-bottom: 20px;
+
 }
 
 .advantage-first-text p {
+  line-height: 21px;
   color: #ffffff;
-  padding: 0 50px;
+  margin: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+
+.advantage-item-number {
+  padding-top: 5px;
+  padding-bottom: 20px;
 }
 
 .house::before {
-  content: url("../img/icon-1.svg");
+  content: "";
+  position: absolute;
+  min-width: 75px;
+  min-height: 72px;
+  top: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url("../img/house.svg");
+
+
 }
 
 .burger::before {
-  content: url("../img/icon-3.svg");
+  content: "";
+  position: absolute;
+  width: 74px;
+  height: 70px;
+  top: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url("../img/burger.svg");
 }
 
 .gift::before {
-  content: url("../img/icon-2.svg");
+  content: "";
+  position: absolute;
+  width: 64px;
+  height: 76px;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url("../img/gift.svg");
 }
 
 .advantage-inner-list {
   display: flex;
-  align-content: top;
+  align-content: bottom;
   width: calc(100/3);
   background-color: #ffffff;
   /*временно*/
-  height: 330px;
-
+  padding-top: 63px;
+  padding-bottom: 83px;
 }
 
 .advantage-inner-item {
-  padding-top: 50px;
+  padding-top: 99px;
+  position: relative;
+  max-width: 400px;
 }
 
 .advantage-inner-item h3 {
@@ -227,13 +261,22 @@ a {
   font-weight: 700;
   color: #000000;
   text-align: center;
+  margin: 0;
 
 }
 
 .advantage-inner-item p {
   text-align: center;
-  padding-left: 60px;
-  padding-right: 60px;
+  line-height: 21px;
+  padding-top: 23px;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin: 0;
+}
+
+.advantage-item img {
+  max-width: 100%;
+  height: auto;
 }
 
 .advantage-second-item-box {
@@ -245,31 +288,41 @@ a {
   background-color: rgba(129,179,210, 0.98);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  /*временно*/
-  width: 400px;
+  padding-top: 45px;
+
+  /*временно, нужно 400пх*/
+  max-width: 400px;
 }
 
 .advantage-second-text h2 {
   font-size: 21px;
   line-height: 21px;
   color: #ffffff;
+  margin: 0;
   /*временно*/
-  padding: 0 120px;
+  padding: 0 100px;
+  padding-bottom: 20px;
 }
 
 .advantage-second-text p {
+  line-height: 21px;
   color: #ffffff;
-  padding: 0 50px;
+  margin: 0;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
+/*С этим нужно думать, по аналогии с иннерами не получается сделать*/
 .advantage-another-list {
   background-color: #eeeeee;
   display: flex;
-  width: calc(100/3);
+
   /*временно,*/
   height: 256px;
   padding-top: 40px;
+}
+.advantage-item {
+
 }
 
 .advantage-another-list h2 {
@@ -291,7 +344,6 @@ a {
 .hotels-search {
   text-align: center;
   background-color: #ffffff;
-  margin: 0 auto;
   max-width: 1200px;
   position: relative;
   z-index: 1;
@@ -319,15 +371,17 @@ a {
   font: inherit;
   font-weight: 700;
   font-size: 21px;
-  letter-spacing: 0.01px;
+  line-height: 26px;
+  letter-spacing: -0.9px;
   color:  #ffffff;
-  vertical-align: middle;
   text-transform: uppercase;
   background-color: #766357;
   border: none;
-  margin: 0 auto;
+  width: 100%;
   max-width: 568px;
-  padding: 30px 132px 30px;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
   cursor: pointer;
 }
 
@@ -340,26 +394,10 @@ a {
   background-color: #503e33;
 }
 
-.search-form-box {
-  background-color: #ffffff;
-  padding: 50px;
-  padding-top: 42px;
-  margin: 0 auto;
-  max-width: 568px;
-  display: flex;
-  justify-content: left; /*как потом сделать кнопку по центру*/
-  flex-direction: column;
-  position: relative;
-  z-index: 1;
-  margin: 0 auto;
-  z-index: 2;
-  height: 395px;
-}
-
 .map {
   position: absolute;
-  margin: 0 auto;
   max-width: 1200px;
+  height: auto;
   z-index: 0;
   transform: translateY(-395px);
 }
@@ -367,25 +405,53 @@ a {
 .search-form {
   background-color: #ffffff;
   border: none;
+  width: 100%;
+  max-width: 458px;
+  height: auto;
+}
+
+.search-form-box {
+  background-color: #ffffff;
+  padding: 55px;
+  width: 100%;
+  max-width: 568px;
+
+  display: flex;
+
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  z-index: 2;
+  /*Временно*/
+  height: 395px;
 }
 
 .search-form-box label{
-  text-align: center;
+  display: inline-block;
+  width: 100%;
+  max-width: 110px;
+  height: auto;
+  text-align: left;
   font: inherit;
   font-weight: 700;
   color: #000000;
+
 }
 
 .search-form-box input{
   font: inherit;
   font-weight: 700;
-  color: #333333;
+  color: #000000;
   text-transform: uppercase;
   background-color: #f2f2f2;
   border: none;
+  padding-left: 13px;
   /*Временно*/
   height: 38px;
-  padding-left: 12px;
+  padding; 0;
+  width: 100%;
+  max-width: 344px;
 }
 
 .calendar {
@@ -393,17 +459,54 @@ a {
   font-size: 0;
   background-color: transparent;
   position: absolute;
-  top: 70px;
-  left: 470px;
+  top: 62px;
+  left: 477px;
   right: 0;
-  color: #333333;
-  fill: green;
+  cursor: pointer;
 }
 /*Не пойму таки как правильно картинкой или через псевдоэлементы*/
 
+.calendar2 {
+  border: none;
+  font-size: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 129px;
+  left: 477px;
+  right: 0;
+  cursor: pointer;
+}
+
 .number-box {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  width: 100%;
+  width: calc(100/2);
+}
+
+.search-form-item-text {
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.search-form-item-number {
+  width: 100%;
+  max-width: 229px;
+  margin: 0;
+}
+
+.search-form-item-number-title-children {
+  padding-left: 50px;
+}
+
+
+
+.number-box input {
+  width: 100%;
+  max-width: 40px;
+  padding-left: 12px;
+  position: relative;
+  left: 38px;
 }
 
 .minuse {
@@ -412,10 +515,9 @@ a {
   border: none;
   font-size: 0;
   padding: 0;
+  margin: 0;
   background-color: #f2f2f2;
-  position: relative;
-  top: -5px;
-  transform: translateX(5px);
+  position: absolute;
   cursor: pointer;
 }
 
@@ -438,6 +540,7 @@ a {
   padding: 0;
   background-color: #f2f2f2;
   position: absolute;
+  transform: translateX(38px);
   cursor: pointer;
 }
 
@@ -457,11 +560,6 @@ a {
   transform: rotate(90deg);
 }
 
-.number-box input{
-  /*как поменять размер поля ввода, там же еще стрелочки*/
-  width: 40px;
-}
-
 .search-form-button {
   font: inherit;
   font-weight: 700;
@@ -469,15 +567,13 @@ a {
   color: #ffffff;
   vertical-align: middle;
   text-transform: uppercase;
-  background-color: #81b3d2;
+  background-color:  rgba(129,179,210, 0.98);
   border: none;
+  width: 100%;
   max-width: 458px;
   padding: 17px 195px;
-}
-
-.search-form-button-find {
-  position: relative;
-  left: 7px;
+  margin-top: 52px;
+  cursor: pointer;
 }
 
 .map-img {
@@ -487,53 +583,190 @@ a {
 
 .main-footer {
    background-color: rgba(255,255,255,0.9);
+
    display: flex;
-   justify-content: space-around;
-   align-content: center;
+   justify-content: space-between;
    max-width: 1200px;
+   padding-top: 26px;
+   padding-bottom: 19px;
    /*Временно*/
-   height: 120px;
-   padding-top: 30px;
+
+
    position: relative;
-   transform: translateY(100px);
+   transform: translateY(78px);
    z-index: 1;
+   box-shadow: 0 0 7px rgba(0,0,0,0.2);
+}
+
+.main-footer-hotels {
+   background-color: rgba(255,255,255,0.9);
+
+   display: flex;
+   justify-content: space-between;
+   max-width: 1200px;
+   padding-top: 26px;
+   padding-bottom: 19px;
+   /*Временно*/
    box-shadow: 0 0 7px rgba(0,0,0,0.2);
 }
 
 .social-list {
   display: flex;
+  margin-left: 3px;
 }
 
-.social-link {
-
-}
-
-.social-item {
+.twitter {
+  content: "";
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  transform: translateX(-79px);
+
   text-align: center;
-  padding-top: 12px;
+  vertical-align: middle;
+  padding-top: 13px;
   margin: 4px;
 }
+/*Остальные по аналогии*/
+.facebook {
+  content: "";
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  transform: translateX(-27px);
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 13px;
+  margin: 4px;
+}
+
+.youtube {
+  content: "";
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  transform: translateX(25px);
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 13px;
+  margin: 4px;
+}
+
+
 
 .hashtag-footer {
   font-weight: 700;
   font-size: 21px;
+  max-width: 400px;
+  padding-left: 134px;
 
   color: #000000;
+
+
+}
+
+.site-by-box {
+  padding-right: 99px;
 }
 
 .box {
     padding-left: 71px;
     padding-right: 71px;
     /*Временно*/
-    height: 217px;
+
+
 }
 
 .filter {
+
+  background-color: transparent;
+  background-image: url("../img/filter_background.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 1200px;
+  padding-top: 83px;
+  padding-bottom: 30px;
+
   display: flex;
+  justify-content: flex-start;
+  /*Временно*/
+  height: 273px;
 }
+
+.infrastructure {
+  padding-right: 142px;
+}
+
+.fieldset-title {
+  font: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.filter fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.fieldset-item label {
+  line-height: 21px;
+  color: #ffffff;
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+
+}
+
+.fieldset-item {
+  margin-bottom: 25px;
+  padding-left: 40px;
+
+}
+
+.fieldset-item-input + label::before {
+  content: "";
+  position: absolute;
+  background: url("../img/checkbox-off.svg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 23px;
+  top: -2px;
+  left: -44px;
+}
+
+.fieldset-item-input:checked + label::after {
+  content: "";
+  position: absolute;
+  background: url("../img/checkbox-on.svg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 27px;
+  top: -4px;
+  left: -44px;
+}
+
+
 
 .sorting-box {
   text-align: left;

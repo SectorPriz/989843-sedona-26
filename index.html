@@ -15,7 +15,7 @@
         <a class="main-nav-logo" href="#"><img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип Седоны"></a>
         <ul class="nav-list list">
           <li class="nav-item"><a class="nav-link1" href="#advantages">Информация</a></li>
-          <li class="nav-item" style="margin-right: auto;"><a class="nav-link" href="#">Фото и видео</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Фото и видео</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Карта штата</a></li>
           <li class="nav-item"><a class="nav-link" href="sedona-hotels.html">Гостиницы</a></li>
         </ul>
@@ -35,7 +35,7 @@
               <div class="advantage-first-text">
                 <h2 class="advantage-item-title">Настоящий городок</h2>
                 <p class="advantage-item-number">— №1 —</p>
-                <p class="advantage-item-subtitle">Седона - не атракцион для туристов, там течёт вcя жизнь</p>
+                <p class="advantage-item-subtitle">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <img class="advantage-inner-img" src="img/advantage-1.jpg" width="800" height="401" alt="Фотография Седоны">
             </div>
@@ -57,15 +57,15 @@
           <li class="advantage-item">
             <div class="advantage-second-item-box">
               <div class="advantage-second-text">
-                <h2 class="advantage-item-title">Там есть Мост дьявола</h2>
+                <h2 class="advantage-item-title">Там есть<br> Мост дьявола</h2>
                 <p class="advantage-item-number">— №2 —</p>
-                <p class="advantage-item-subtitle">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                <p class="advantage-item-subtitle">Да, по нему можно пройти! Если конечно вы осмелитесь </p>
               </div>
               <img src="img/advantage-2.jpg" width="800" height="400" alt="Фотография моста Дьявола">
             </div>
           </li>
         </ol>
-        <ol class="advantage-another-list list">
+        <ol class="advantage-another-list list" start="3">
           <li class="advantage-item">
             <h2 class="advantage-item-title">Небольшая площадь</h2>
             <p class="advantage-item-number">— №3 —</p>
@@ -94,16 +94,18 @@
         <h2 class="visually-hidden">Найти отель в Седоне</h2>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="search-form-item-text">
-            <label class="search-form-item-text-title" for="appointment-date-arrival">Дата заезда:</label>
+            <span class="search-lable">
+              <label class="search-form-item-text-title" for="appointment-date-arrival">Дата заезда:</label>
+            </span>
             <span class="search-form-item-input-text-box">
-              <button class="visually-hidden" type="button">Выбор даты<img src="img/calendar.svg" alt="Выбор даты"></button>
+              <button class="calendar" type="button">Выбор даты<img src="img/calendar.svg" alt="Выбор даты"></button>
               <input class="search-form-item-text-input" id="appointment-date-arrival" type="text" name="date-arrival" value="" placeholder="24 апреля 2017">
             </span>
           </p>
           <p class="search-form-item-text">
             <label class="search-form-item-text-title" for="appointment-date-departure">Дата выезда:</label>
             <span class="search-form-item-input-text-box">
-              <button class="calendar" type="button"><img src="img/calendar.svg" alt="Выбор даты"></button>
+              <button class="calendar2" type="button"><img src="img/calendar.svg" alt="Выбор даты"></button>
               <input class="search-form-item-text-input" id="appointment-date-departure" type="text" name="date-departure" value="" placeholder="4 июля 2017">
             </span>
           </p>
@@ -111,19 +113,15 @@
             <h3 class="visually-hidden">Количество отдыхающих</h3>
             <p class="search-form-item-number">
               <label class="search-form-item-number-title" for="grown">Взрослые:</label>
-              <span class="search-form-item-number-box">
               <button class="minuse" type="button">-</button>
               <input class="search-form-item-number-input" id="grown" type="number" name="grown" value="" placeholder="2">
               <button class="pluse" type="button">+</button>
-            </span>
             </p>
             <p class="search-form-item-number">
-              <label class="search-form-item-number-title" for="children">Дети:</label>
-              <span class="search-form-item-number-box">
-              <button class="vi" type="button">-</button>
-              <input class="search-form-item-number-input" id="children" type="number" name="children" value="" placeholder="0">
-              <button class="vi" type="button">+</button>
-            </span>
+              <label class="search-form-item-number-title-children" for="children">Дети:</label>
+              <button class="minuse" type="button">-</button>
+              <input class="search-form-item-number-input-children" id="children" type="number" name="children" value="" placeholder="0">
+              <button class="pluse" type="button">+</button>
             </p>
           </section>
           <span class="search-form-button-find">
@@ -137,22 +135,20 @@
       </section>
     </main>
     <footer class="main-footer">
-      <p class="hashtag-footer">#VISITSEDONA</p>
+      <p class="hashtag-footer">#visitsedona</p>
       <ul class="social-list list">
         <li class="social-item">
-          <a class="social-link" href="#"><img src="img/twitter.svg" alt="Twitter"></a>
+          <a class="social-link" href="#"><span class="twitter"><img src="img/twitter.svg" width="17px" height="15px" alt="Twitter"></span></a>
         </li>
         <li class="social-item">
-          <a class="social-link" href="#"><img src="img/fb-icon.svg" alt="FaceBook"></a>
+          <a class="social-link" href="#"><span class="facebook"><img src="img/fb-icon.svg" width="12px" height="22px" alt="FaceBook"></span></a>
         </li>
         <li class="social-item">
-          <a class="social-link" href="#"><img src="img/youtube.svg" alt="YouTube"></a>
+          <a class="social-link" href="#"><span class="youtube"><img src="img/youtube.svg" width="20px" height="16px" alt="YouTube"></span></a>
         </li>
       </ul>
-      <div class="">
-        <p class="site-by">WEBSITE BY
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy"></a>
-        </p>
+      <div class="site-by-box">
+        <p class="site-by">websyte by<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy"></a></p>
       </div>
     </footer>
   </div>

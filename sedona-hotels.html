@@ -23,24 +23,21 @@
     </header>
     </header>
     <main>
-      <!--  <section class="hero-hotels">
-        <h2 class="visually-hidden">Баннер</h2>
-      </section> -->
       <div class="filter box">
         <h1 class="visually-hidden">Выбор отеля</h1>
         <fieldset class="fieldset-box">
           <legend class="fieldset-title">Инфраструктура:</legend>
-          <ul class="fieldset-list list">
+          <ul class="fieldset-list list infrastructure">
             <li class="fieldset-item">
-              <input class="fieldset-item-input" id="appointment-pool" type="checkbox" checked name="pool" value="">
+              <input class="visually-hidden fieldset-item-input" id="appointment-pool" type="checkbox" name="pool" checked>
               <label class="fieldset-item-title" for="appointment-pool">Бассейн</label>
             </li>
             <li class="fieldset-item">
-              <input class="fieldset-item-input" id="appointment-parking" type="checkbox" name="parking" value="">
+              <input class="visually-hidden fieldset-item-input" id="appointment-parking" type="checkbox" name="parking" value="">
               <label class="fieldset-item-title" for="appointment-parking">Парковка</label>
             </li>
             <li class="fieldset-item">
-              <input class="fieldset-item-input" id="appointment-WI-FI" type="checkbox" name="WI-FI" value="">
+              <input class="visually-hidden fieldset-item-input" id="appointment-WI-FI" type="checkbox" name="WI-FI" value="">
               <label class="fieldset-item-title" for="appointment-WI-FI">WI-FI</label>
             </li>
           </ul>
@@ -49,25 +46,19 @@
           <legend class="fieldset-title">Тип жилья:</legend>
           <ul class="fieldset-list list">
             <li class="fieldset-item">
-              <input class="fieldset-item-input" id="appointment-guesthouse" type="checkbox" checked name="guesthouse" value="">
+              <input class="visually-hidden fieldset-item-input" id="appointment-guesthouse" type="checkbox" name="guesthouse" checked>
               <label class="fieldset-item-title" for="appointment-guesthouse">Гостиница</label>
             </li>
             <li class="fieldset-item">
-              <input class="fieldset-item-input" id="appointment-hotels" type="checkbox" checked name="hotels" value="">
-              <label class="fieldset-item-title" for="appointment-hotels">Отель</label>
+              <input class="visually-hidden fieldset-item-input" id="appointment-hotels" type="checkbox" name="hotels" checked>
+              <label class="fieldset-item-title" for="appointment-hotels">Мотель</label>
             </li>
             <li class="fieldset-item">
-              <input class="fieldset-item-input" id="appointment-apartment" type="checkbox" checked name="apartment" value="">
+              <input class="visually-hidden fieldset-item-input" id="appointment-apartment" type="checkbox" name="apartment"  checked>
               <label class="fieldset-item-title" for="appointment-apartment">Аппартаменты</label>
             </li>
           </ul>
         </fieldset>
-        <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="filter-form-lable" for="appointment-date-arrival">Стоимость в сутки (Р):</label>
-          <input type="???" name="" value="">
-          <input type="submit" name="" value="Показать">
-          <!--  <button type="submit" name="показать">Показать</button> -->
-        </form>
       </div>
       <section class="sorting-box box">
         <h2 class="sorting-title">Найдено:<span class="sorting-title-numeral">3</span></h2>
@@ -159,22 +150,20 @@
       </section>
     </main>
     <footer class="main-footer">
-      <p class="hashtag-footer">#VISITSEDONA</p>
+      <p class="hashtag-footer">#visitsedona</p>
       <ul class="social-list list">
         <li class="social-item">
-          <a class="social-link" href="#"><img src="img/twitter.svg" alt="Twitter"></a>
+          <a class="social-link" href="#"><span class="twitter"><img src="img/twitter.svg" width="17px" height="15px" alt="Twitter"></span></a>
         </li>
         <li class="social-item">
-          <a class="social-link" href="#"><img src="img/fb-icon.svg" alt="FaceBook"></a>
+          <a class="social-link" href="#"><span class="facebook"><img src="img/fb-icon.svg" width="12px" height="22px" alt="FaceBook"></span></a>
         </li>
         <li class="social-item">
-          <a class="social-link" href="#"><img src="img/youtube.svg" alt="YouTube"></a>
+          <a class="social-link" href="#"><span class="youtube"><img src="img/youtube.svg" width="20px" height="16px" alt="YouTube"></span></a>
         </li>
       </ul>
-      <div class="">
-        <p class="site-by">WEBSITE BY
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy"></a>
-        </p>
+      <div class="site-by-box">
+        <p class="site-by">websyte by<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy"></a></p>
       </div>
     </footer>
   </div>
