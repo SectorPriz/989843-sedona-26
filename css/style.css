@@ -29,7 +29,7 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -679,15 +679,12 @@ a {
 }
 
 .box {
+    margin: 0;
     padding-left: 71px;
     padding-right: 71px;
-    /*Временно*/
-
-
 }
 
 .filter {
-
   background-color: transparent;
   background-image: url("../img/filter_background.jpg");
   background-position: top center;
@@ -726,31 +723,27 @@ a {
   line-height: 21px;
   color: #ffffff;
   position: relative;
-
   display: block;
-
   cursor: pointer;
   user-select: none;
-
 }
 
 .fieldset-item {
   margin-bottom: 25px;
   padding-left: 40px;
-
 }
 
 .fieldset-item-input + label::before {
   content: "";
   position: absolute;
   background: url("../img/checkbox-off.svg");
-
   background-position: center;
   background-repeat: no-repeat;
   width: 23px;
   height: 23px;
   top: -2px;
   left: -44px;
+
 }
 
 .fieldset-item-input:checked + label::after {
@@ -766,7 +759,9 @@ a {
   left: -44px;
 }
 
-
+.fieldset-item-input:checked + label::before {
+  display: none;
+}
 
 .sorting-box {
   text-align: left;
