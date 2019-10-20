@@ -21,7 +21,6 @@
         </ul>
       </nav>
     </header>
-    </header>
     <main>
       <div class="filter box">
         <h1 class="visually-hidden">Выбор отеля</h1>
@@ -60,21 +59,24 @@
           </ul>
         </fieldset>
         <!--Фильтр по демке-->
-        <p>
-          <h2 class="visually-hidden"></h2>
+        <section class="form-range">
+          <h3 class="visually-hidden">sdf</h3>
           <form class="filter-range" action="index.html" method="post">
             <h3 class="filter-range-title">Стоимость в сутки (р):</h3>
-            <div class="price-controls">
+            <p class="price-controls">
               <label class="min-price">от <input type="text" name="min-price" value="0"></label>
               <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
-            </div>
-            <div class="range-controls">
+            </p>
+            <p class="range-controls">
               <div class="scale">
-                <div class="bar"></div>
+                <span class="bar"></span>
               </div>
-            </div>
+              <span class="range-toggle range-toggle-min"></span>
+              <span class="range-toggle range-toggle-max"></span>
+            </p>
+            <button class="btn-transparent" type="submit">Показать</button>
           </form>
-        </p>
+        </section>
       </div>
       <section class="sorting-box box">
         <h2 class="sorting-title">Найдено:<span class="sorting-title-numeral">3</span></h2>
@@ -150,7 +152,7 @@
               <div class="">
                 <a class="hotel-link" href="#"><h3 class="hotel-name">VILLAS AT POCO DIABLO</h3></a>
                 <p class="hotel-category">
-                  <span class="hotel-prise"><span class="hotel-category-title">АПАРТАМЕНТЫ</span><span class="hotel-category-price-villas">ОТ 2000 Р.</span>
+                  <span class="hotel-prise"><span class="hotel-category-title">АПАРТАМЕНТЫ<span class="hotel-category-price-villas">ОТ 2000 Р.</span></span>
                 </p>
                 <p class="hotel-battons">
                   <a class="hotel-battons-more" href="#">Подробнее</a>
@@ -172,13 +174,13 @@
       <p class="hashtag-footer">#visitsedona</p>
       <ul class="social-list list">
         <li class="social-item">
-          <a class="social-link" href="#"><span class="twitter"><img src="img/twitter.svg" width="17px" height="15px" alt="Twitter"></span></a>
+          <a class="social-link" href="#"><span class="twitter"><img src="img/twitter.svg" alt="Twitter"></span></a>
         </li>
         <li class="social-item">
-          <a class="social-link" href="#"><span class="facebook"><img src="img/fb-icon.svg" width="12px" height="22px" alt="FaceBook"></span></a>
+          <a class="social-link" href="#"><span class="facebook"><img src="img/fb-icon.svg" alt="FaceBook"></span></a>
         </li>
         <li class="social-item">
-          <a class="social-link" href="#"><span class="youtube"><img src="img/youtube.svg" width="20px" height="16px" alt="YouTube"></span></a>
+          <a class="social-link" href="#"><span class="youtube"><img src="img/youtube.svg" alt="YouTube"></span></a>
         </li>
       </ul>
       <div class="site-by-box">

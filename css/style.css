@@ -70,8 +70,8 @@ a {
 
 .hero {
   position: relative;
-  background-image: url("../img/background_photo.jpg");
-  background-position: top left 0.03px;
+  background-image: url("../img/intro-mask.svg"), url("../img/background_photo.jpg");
+  background-position: bottom -2px center, top center;
   background-repeat: no-repeat;
 }
 
@@ -409,6 +409,9 @@ a {
   z-index: 0;
   transform: translateY(-395px);
 }
+.map-img {
+  display: block;
+}
 
 .search-form {
   background-color: #ffffff;
@@ -674,8 +677,6 @@ a {
   margin: 4px;
 }
 
-
-
 .hashtag-footer {
   font-weight: 700;
   font-size: 21px;
@@ -687,10 +688,19 @@ a {
 .site-by {
   font-size: 14px;
   line-height: 26px;
+  letter-spacing: 0,02px;
+  display: flex;
+  align-items: center;
+  transform: translateY(-4px);
 }
 
 .site-by-box {
-  padding-right: 99px;
+  padding-right: 101px;
+}
+
+.site-by svg {
+  padding-top: 4px;
+  margin-left: 8px;
 }
 
 
@@ -795,6 +805,82 @@ a {
   display: none;
 }
 
+.form-range {
+  margin-left: auto;
+}
+
+.filter-range {
+  width: 330px;
+  margin: 50px auto; /* для демо */
+
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  width: 314px;
+}
+
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
 .sorting-box {
   text-align: left;
   background-color: #ffffff;
@@ -866,8 +952,13 @@ a {
 .sorting-box-battons {
   margin-left: auto;
   padding-top: 4px;
-
 }
+
+.active {
+    /*Так и не разобрался как убрать подчеркивание*/
+    text-decoration: none;
+    color:  #81b3d2;
+  }
 
 .up {
   width: 11px;
@@ -1046,7 +1137,7 @@ a {
 
 .rating-4-star::after {
   content: "";
-  width: 91px;
+  width: 90px;
   height: 17px;
   position: absolute;
   background: url("../img/star.svg");
@@ -1065,7 +1156,7 @@ a {
 
 .rating-3-star::after {
   content: "";
-  width: 63px;
+  width: 65px;
   height: 17px;
   position: absolute;
   background: url("../img/star.svg");
@@ -1084,7 +1175,7 @@ a {
 
 .rating-2-star::after {
   content: "";
-  width: 38px;
+  width: 42px;
   height: 17px;
   position: absolute;
   background: url("../img/star.svg");
