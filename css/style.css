@@ -123,7 +123,7 @@ a {
 }
 
 .main-nav a:active {
-  color: rgba(0,0,0, 0.3);
+  color: #cacaca;
 }
 
 .advantage-box {
@@ -170,7 +170,7 @@ a {
 }
 
 .advantage-first-text {
-  background-color: rgba(129,179,210, 0.98);
+  background-color: #81b3d2;
   display: flex;
   flex-direction: column;
   padding-top: 47px;
@@ -241,8 +241,6 @@ a {
 
 .advantage-inner-list {
   display: flex;
-  align-content: bottom;
-  width: calc(100/3);
   background-color: #ffffff;
   /*временно*/
   padding-top: 63px;
@@ -252,6 +250,7 @@ a {
 .advantage-inner-item {
   padding-top: 99px;
   position: relative;
+  width: calc(100%/3);
   max-width: 400px;
 }
 
@@ -274,18 +273,13 @@ a {
   margin: 0;
 }
 
-.advantage-item img {
-  max-width: 100%;
-  height: auto;
-}
-
 .advantage-second-item-box {
   display: flex;
   flex-direction: row-reverse;
 }
 
 .advantage-second-text {
-  background-color: rgba(129,179,210, 0.98);
+  background-color: #81b3d2;
   display: flex;
   flex-direction: column;
   padding-top: 45px;
@@ -460,7 +454,7 @@ a {
   padding-left: 13px;
   /*Временно*/
   height: 38px;
-  padding; 0;
+  padding: 0;
   width: 100%;
   max-width: 344px;
 }
@@ -469,23 +463,42 @@ a {
   border: none;
   font-size: 0;
   background-color: transparent;
+  fill: #d1d1d1;
   position: absolute;
   top: 62px;
   left: 477px;
   right: 0;
   cursor: pointer;
 }
-/*Не пойму таки как правильно картинкой или через псевдоэлементы*/
+
+.calendar:focus,
+.calendar:hover {
+  fill: #000000;
+}
+
+.calendar:active {
+  fill: #81b3d2;
+}
 
 .calendar2 {
   border: none;
   font-size: 0;
   background-color: transparent;
+  fill: #d1d1d1;
   position: absolute;
   top: 129px;
   left: 477px;
   right: 0;
   cursor: pointer;
+}
+
+.calendar2:focus,
+.calendar2:hover {
+  fill: #000000;
+}
+
+.calendar2:active {
+  fill: #81b3d2;
 }
 
 .number-box {
@@ -504,6 +517,11 @@ a {
   width: 100%;
   max-width: 229px;
   margin: 0;
+}
+
+.search-form-item-text-input:hover {
+  background-color: #ebebeb;
+  cursor: pointer;
 }
 
 .search-form-item-number-title-children {
@@ -578,13 +596,22 @@ a {
   color: #ffffff;
   vertical-align: middle;
   text-transform: uppercase;
-  background-color:  rgba(129,179,210, 0.98);
+  background-color: #81b3d2;
   border: none;
   width: 100%;
   max-width: 458px;
   padding: 17px 195px;
   margin-top: 52px;
   cursor: pointer;
+}
+
+.search-form-button:focus,
+.search-form-button:hover {
+  background-color: #669ec0;
+}
+.search-form-button:active {
+  color: #94b9d2;
+  background-color: #5496bd;
 }
 
 .map-img {
@@ -606,7 +633,7 @@ a {
    position: relative;
    transform: translateY(78px);
    z-index: 1;
-   box-shadow: 0 0 7px rgba(0,0,0,0.2);
+   box-shadow: 0 0 7px 0 rgba(0,0,0,0.2);
 }
 
 .main-footer-hotels {
@@ -640,18 +667,29 @@ a {
   top: 32px;
   left: 50%;
   transform: translateX(-79px);
-
+  fill: #ffffff;
   text-align: center;
   vertical-align: middle;
   padding-top: 13px;
   margin: 4px;
 }
 /*Остальные по аналогии*/
+.twitter:focus,
+.twitter:hover {
+  background-color: #669ec0;
+}
+
+.twitter:active {
+  background-color: #5496bd;
+  fill: #88b6d1;
+}
+
 .facebook {
   content: "";
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
+  fill: #ffffff;
   position: absolute;
   top: 32px;
   left: 50%;
@@ -662,11 +700,22 @@ a {
   margin: 4px;
 }
 
+.facebook:focus,
+.facebook:hover {
+  background-color: #669ec0;
+}
+
+.facebook:active {
+  background-color: #5496bd;
+  fill: #88b6d1;
+}
+
 .youtube {
   content: "";
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
+  fill: #ffffff;
   position: absolute;
   top: 32px;
   left: 50%;
@@ -675,6 +724,16 @@ a {
   vertical-align: middle;
   padding-top: 13px;
   margin: 4px;
+}
+
+.youtube:focus,
+.youtube:hover {
+  background-color: #669ec0;
+}
+
+.youtube:active {
+  background-color: #5496bd;
+  fill: #88b6d1;
 }
 
 .hashtag-footer {
@@ -688,7 +747,7 @@ a {
 .site-by {
   font-size: 14px;
   line-height: 26px;
-  letter-spacing: 0,02px;
+  letter-spacing: 1px;
   display: flex;
   align-items: center;
   transform: translateY(-4px);
@@ -779,6 +838,7 @@ a {
   content: "";
   position: absolute;
   background: url("../img/checkbox-off.svg");
+
   background-position: center;
   background-repeat: no-repeat;
   width: 23px;
@@ -803,6 +863,10 @@ a {
 
 .fieldset-item-input:checked + label::before {
   display: none;
+}
+/*Вот не понял как покрасить. В разметку не добавляли его. Если убрать fill в svg, то тут если его прописать он не работаетб нужно ли по аналогии с календарем их аливать?*/
+.fieldset-item-input:disabled + label::after {
+  fill: #6a6a6a;
 }
 
 .form-price {
@@ -953,7 +1017,7 @@ a {
   display: flex;
   padding-top: 30px;
   padding-bottom: 30px;
-  border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   /*нет почему то бордера*/
 }
 
@@ -965,7 +1029,7 @@ a {
 .sorting-box h2 {
   margin: 0;
   padding-right: 50px;
-  letter-spacing: 0,9px;
+  letter-spacing: 1px;
 }
 
 .sorting-box p {
@@ -1082,7 +1146,7 @@ a {
 }
 
 .hotel-item {
-  border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   padding: 30px 73px 21px 73px;
 }
 
@@ -1155,12 +1219,12 @@ a {
 
 .hotel-battons-more:active {
   /*исправить цвета*/
-  color: rgba(0,0,0,0.3);
+  color: #91b7d1;
   background-color: #5496bd;
 }
 
 .hotel-battons-reserv {
-  font-size: 700;
+  font-weight: 700;
   line-height: 21px;
   color: #ffffff;
   max-width: 142px;
@@ -1174,7 +1238,7 @@ a {
 }
 
 .hotel-battons-reserv:active {
-  color: rgba(255,255,255,255,0,3);
+  color: #7e746e;
   background-color: #503e33;
 }
 
