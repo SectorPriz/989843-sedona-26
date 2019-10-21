@@ -864,10 +864,21 @@ a {
 .fieldset-item-input:checked + label::before {
   display: none;
 }
-/*Вот не понял как покрасить. В разметку не добавляли его. Если убрать fill в svg, то тут если его прописать он не работаетб нужно ли по аналогии с календарем их аливать?*/
-.fieldset-item-input:disabled + label::after {
-  fill: #6a6a6a;
+
+.fieldset-item-input:disabled + label::before {
+  content: "";
+  position: absolute;
+  background: url("../img/checkbox-disabled.svg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 27px;
+  top: -4px;
+  left: -46px;
+
 }
+
 
 .form-price {
   margin-left: auto;
