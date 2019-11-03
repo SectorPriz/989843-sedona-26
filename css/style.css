@@ -40,8 +40,8 @@ a {
   box-shadow: 0 0 15px rgba(202,202,202,1);
   margin: 0 auto;
   max-width: 1200px;
-  width: 100%;
   position: relative;
+  width: 100%;
 }
 .list {
   list-style: none;
@@ -263,8 +263,8 @@ a {
   padding-top: 47px;
 }
 .advantage-another-item {
-  width: 100%;
   max-width: 400px;
+  width: 100%;
 }
 .advantage-another-list h2 {
   color: #000000;
@@ -339,16 +339,16 @@ a {
   position: relative;
 }
 .map-img {
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
   z-index: 1;
 }
-.interactive-map{
-  position: relative;
-  z-index: 2;
-  top: 0;
+.interactive-map {
   left: 0;
+  position: relative;
+  top: 0;
+  z-index: 2;
 }
 .search-form-item-text {
   align-items: center;
@@ -362,20 +362,19 @@ a {
   width: 100%;
 }
 .search-form-box-show {
-  max-height: 500px;
-  overflow: hidden;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  margin-left: 316px;
+  max-height: 500px;
   max-width: 568px;
+  overflow: hidden;
   padding: 55px;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  transition: max-height 0.5s, padding 0.5s;
   width: 100%;
   z-index: 3;
-  transition: max-height 0.5s, padding 0.5s;
 }
 .search-form-box-hidden {
   max-height: 0;
@@ -386,7 +385,6 @@ a {
   100% {
     transform: translateX(0);
   }
-
   10%,
   30%,
   50%,
@@ -394,7 +392,6 @@ a {
   90% {
     transform: translateX(-10px);
   }
-
   20%,
   40%,
   60%,
@@ -425,7 +422,6 @@ a {
   max-width: 110px;
   vertical-align: top;
   width: 100%;
-
 }
 .search-form-box-show input {
   background-color: #f2f2f2;
@@ -473,7 +469,7 @@ a {
   fill: #d1d1d1;
   font-size: 0;
   position: absolute;
-  right: 0px;
+  right: 0;
   top: 7px;
   z-index: 5;
 }
@@ -552,16 +548,16 @@ a {
 }
 .main-footer {
   background-color: rgba(255,255,255,0.9);
+  bottom: 0;
   box-shadow: 0 0 7px 0 rgba(0,0,0,0.2);
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
   padding-bottom: 19px;
   padding-top: 26px;
+  position: absolute;
   width: 100%;
   z-index: 2;
-  position: absolute;
-  bottom: 0;
 }
 .main-footer-hotels {
   background-color: rgba(255,255,255,0.9);
