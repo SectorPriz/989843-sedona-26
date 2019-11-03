@@ -345,6 +345,7 @@ a {
   z-index: 1;
 }
 .interactive-map {
+  border: 0;
   left: 0;
   position: relative;
   top: 0;
